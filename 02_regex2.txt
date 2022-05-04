@@ -1,0 +1,155 @@
+Aim: Write a program which check if the given string is accepted by the regular expression a+b*(c+d)+a*c*or not.
+
+Theory: 
+Simple phrases known as Regular Expressions can simply explain the language that finite automata accept. It's the most efficient means of expressing any language. A regular expression is also known as a pattern sequence that defines a string. To match character combinations in strings, regular expressions are utilised. This pattern was employed by the string searching method to discover the operations on a string.
+
+Code:
+#include <bits/stdc++.h>
+using namespace std;
+
+int stringAcceptance(string input)
+{
+    int currentState = 0;
+    bool isAccepted = false;
+
+    for(char c: input)
+    {
+        switch(currentState)
+        {
+            case 0:
+            {
+                if(c == '0')
+                {
+                    currentState = 0;
+                    isAccepted = true;
+                }
+
+                else if(c == '1')
+                {
+                    currentState = 1;
+                    isAccepted = false;
+                }
+
+                else
+                {
+                    cout<<"Error! Invalid input";
+                    isAccepted = false;
+                }
+                break;
+            }
+
+            case 1:
+            {
+                if(c=='0')
+                {
+                    currentState = 2;
+                    isAccepted = false;
+                }
+
+                else if(c=='1')
+                {
+                    currentState = 3;
+                    isAccepted = false;
+                }
+
+                else
+                {
+                    cout<<"Error! Invalid input";
+                    isAccepted = false;
+                }
+
+                break;
+            }
+
+            case 2:
+            {
+                if(c=='0')
+                {
+                    currentState = 4;
+                    isAccepted = false;
+                }
+
+                else if(c=='1')
+                {
+                    currentState = 0;
+                    isAccepted = true;
+                }
+
+                else
+                {
+                    cout<<"Error! Invalid input";
+                    isAccepted = false;
+                }
+
+                break;
+            }
+
+            case 3:
+            {
+                if(c=='0')
+                {
+                    currentState = 1;
+                    isAccepted = false;
+                }
+
+                else if(c=='1')
+                {
+                    currentState = 2;
+                    isAccepted = false;
+                }
+
+                else
+                {
+                    cout<<"Error! Invalid input";
+                    isAccepted = false;
+                }
+                break;
+            }
+
+            case 4:
+            {
+                if(c=='0')
+                {
+                    currentState = 3;
+                    isAccepted = false;
+                }
+
+                else if(c=='1')
+                {
+                    currentState = 4;
+                    isAccepted = false;
+                }
+
+                else
+                {
+                    cout<<"Error! Invalid input";
+                    isAccepted = false;
+                }
+
+                break;
+            }
+
+        }
+    }
+
+    if(isAccepted)
+    {
+        cout<<"Accepted"<<endl;
+    }
+
+    else
+    {
+        cout<<"Not accepted"<<endl;
+    }
+    return 0;
+}
+
+int main()
+{
+    string input;
+
+    cout<<"Enter Bin. String: ";
+    cin>>input;
+    stringAcceptance(input);
+    return 0;
+}

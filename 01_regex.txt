@@ -1,0 +1,79 @@
+Aim: Write a program which check if the given string is accepted by the regular expression 0*1+(0+1) or not.
+
+Theory: Simple phrases known as Regular Expressions can simply explain the language that finite automata accept. It's the most efficient means of expressing any language. A regular expression is also known as a pattern sequence that defines a string. To match character combinations in strings, regular expressions are used. This pattern was employed by the string searching method to discover the operations on a string.
+
+Code:
+
+#include <bits/stdc++.h>
+
+using namespace std;
+int main() {
+    string input;
+    cout << "Enter Input String: ";
+    cin >> input;
+    int dfa = 0;
+    bool isAccepted = false;
+    for (char c: input) {
+        switch (dfa) {
+        case 0: {
+            if (c == '0') {
+                dfa = 1;
+                isAccepted = 1;
+            } else if (c == '1') {
+                dfa = 2;
+                isAccepted = 1;
+            } else {
+                cout << "Error! Invalid Input" << endl;
+                return 0;
+            }
+            break;
+        }
+        case 1: {
+            if (c == '0') {
+                dfa = 1;
+                isAccepted = 1;
+            } else if (c == '1') {
+                dfa = 2;
+                isAccepted = 1;
+            } else {
+                cout << "Error! Invalid Input" << endl;
+                return 0;
+            }
+            break;
+        }
+        case 2: {
+            if (c == '0') {
+                dfa = 3;
+                isAccepted = 1;
+            } else if (c == '1') {
+                dfa = 2;
+                isAccepted = 1;
+            } else {
+                cout << "Error! Invalid Input" << endl;
+                return 0;
+            }
+            break;
+        }
+        case 3: {
+            if (c == '0' || c == '1') {
+                dfa = 4;
+                isAccepted = 0;
+            } else {
+                cout << "Error! Invalid Input" << endl;
+                return 0;
+            }
+            break;
+        }
+        case 4: {
+            cout << "Not accepted" << endl;
+            return 0;
+        }
+        break;
+        }
+    }
+    if (isAccepted)
+        cout << "Accepted" << endl;
+    else
+        cout << "Accepted" << endl;
+    return 0;
+}

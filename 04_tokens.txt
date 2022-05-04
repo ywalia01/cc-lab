@@ -1,0 +1,45 @@
+Aim: Write a program to identify the total number of tokens present in a statement
+
+Theory: 
+Lexemes are defined as a token's sequence of characters (alphanumeric). Every lexeme must follow a set of rules in order to be recognised as a legitimate token. Grammar rules, in the form of a pattern, define these rules. A pattern describes what may be a token, and regular expressions are used to define these patterns. Tokens in programming languages include keywords, constants, identifiers, strings, integers, operators, and punctuation symbols.
+
+Code: 
+#include<stdio.h>
+#include<ctype.h>
+#include<conio.h>
+#include<string.h>
+int main() {
+    char str[50];
+    int len;
+    int i, a = 0, b = 0, d = 0, f = 0,
+        var = 0, tokens = 0, constant = 0, oper = 0;
+    printf("Enter string :");
+    scanf("%s", str);
+    len = strlen(str);
+    for (i = 0; i < len; i++) {
+        if (isalpha(str[i]))
+            a++;
+        if (isdigit(str[i])) {
+            while (isdigit(str[i])) {
+                i++;
+            }
+            d++;
+        }
+        if (str[i] == '%' || str[i] == '*' || str[i] == '/' || str[i] == '+' || str[i] == '-' || str[i] == '=')
+            f++;
+        else
+            b++;
+    }
+    var = a;
+    constant = d;
+    oper = f;
+    tokens =
+        var +constant + oper;
+    printf("\ntotalvar:%d ",
+        var);
+    printf("\ntotal constants:%d", constant);
+    printf("\ntotalopeators:%d", oper);
+    printf("\ntotal tokens: %d", tokens);
+    return 0;
+    getch();
+}
