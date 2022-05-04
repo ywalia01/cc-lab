@@ -77,3 +77,10 @@ int main() {
         cout << "Accepted" << endl;
     return 0;
 }
+
+
+Outputs:
+
+https://lh5.googleusercontent.com/dshs9mqqqUOUzu3Euk1iZrnb0k7TSu2zbEmQUJq5ESxp7a1wnCj5k37PZo6TRoDJkZXT0NJjVrgcDS3Tq8G46yTGSz36_drgjpEqzk4PzoaSKs5ZGyaMC9_m7FAEMxwn7PZc1aNNcE6CMNhs0w
+
+https://lh4.googleusercontent.com/sbzx5xLSKDdmW8QD15USXe07eP8eq3ug9wTr116l8wKeXqWKcuvDMpBYHvewjqF61ieUgRv7LmeqsLiU7Qk_FFFfbJvxmBPCqpe_DgSzOyV5FAI-4KgNENhSKOjMjXaLeLPGqQp9ZwAeE5w55w

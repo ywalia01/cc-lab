@@ -110,3 +110,7 @@ int main() {
         printf("All Tokens are : \n");
         detectTokens(str);
         return (0);
+
+Outputs:
+
+https://lh5.googleusercontent.com/hiJBqDyB51khvmRtZdwYTf6w5WWtWvySZ-jjYfifPvuNFGcTD4NfIfCtzLebHmq_9D9qDR0EAclTk4JPAtAuzZgXzyGim7oPyU0hs0K7V7Qm1y2dARTYbLZn6Aga5j2ZkE4Sjh69eeDXqVWa6A

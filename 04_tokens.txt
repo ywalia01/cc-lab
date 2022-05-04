@@ -43,3 +43,7 @@ int main() {
     return 0;
     getch();
 }
+
+Outputs: 
+
+https://lh5.googleusercontent.com/ukmPhA0aCHxXU9Pg6OuqZJvOBXKKuSH4nBgezX631GSDLLICIRxcn5-pgNYNXgHvtTrwJbLznE7ePlWMlEpU1isN65j5MAgKWdiuUDk2T0d7muZpHNy4gHT3pj73zbC7C4iDKkUU-M2ZNltd3A

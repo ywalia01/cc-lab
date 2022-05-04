@@ -211,3 +211,8 @@ void followfirst(char c, int c1, int c2) {
         }
     }
 }
+
+
+Outputs:
+
+https://lh5.googleusercontent.com/Tm6TLOpJP-b9FfTMjp1fQi3WmN4Fwpdu4vG6b7vvrsbOJ_vRX_DvTbAdg0uJqTAq4trIE0PqGW0-WJ2AzZ8L4bDYEAyznqxvlGg6Y7eVK85oko7_LHxIJdFF5jqW2L7mWUWKarRpYEuNI1OQ6Q

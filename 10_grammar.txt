@@ -81,3 +81,7 @@ void A(char * input) {
     else
         error = 1;
 }
+
+Outputs:
+
+https://lh4.googleusercontent.com/yX3u_t3FXTEC7s79GOLoerfRuGQGDF3F4_iFCo8HY-399P002v-5jkfxGXloiKaurGlYcOILTWHxPaDM5-kEeTwT0BcPY1c78HJynW9d0IUq91LLFNAIVW8stTGTvHoho8feo3TrfXodRP50uA

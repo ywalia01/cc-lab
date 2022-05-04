@@ -98,3 +98,7 @@ string convert(string infix) {
     }
     return postfix;
 }
+
+Outputs:
+
+https://lh3.googleusercontent.com/HJOJJzvphnvMm01X-63fh6Z3YQ_flnFu9Nbd0fR5FD7jLPZbF9ReHKsJywnjkMIzTQxvC52LHkcE6OtWe1Yp7wUjfZlKAEcyRER4UkdP7a9_eRppwVkMyaK0qkiU-OFfvXcWB5G7zEOvI6JgSQ

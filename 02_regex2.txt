@@ -153,3 +153,7 @@ int main()
     stringAcceptance(input);
     return 0;
 }
+
+Outputs: 
+
+https://lh3.googleusercontent.com/5r6zHK6p3PTqndbn_k1whdY3gN1Coo9XT3DMVnYxe4nUZLM0WS0FrrA8HiyWlIRE3iBeoujDnCjk6x7pVdroJ5t_lpDFd_GRFbgkWgdpJQbLdlUQBonHZ_18O10glb8vvkc0VDHwq-RwQ-Kpug
